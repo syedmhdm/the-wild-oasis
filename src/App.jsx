@@ -2,14 +2,9 @@ import styled from "styled-components";
 import GlobalStyles from "./styles/GlobalStyles";
 import Button from "./ui/Button";
 import Input from "./ui/Input";
+import Heading from "./ui/Heading";
 
 function App() {
-  const H1 = styled.h1`
-    font-size: 30px;
-    font-weight: 600;
-    background-color: yellow;
-  `;
-
   const StyledApp = styled.main`
     background-color: orangered;
     padding: 20px;
@@ -19,9 +14,11 @@ function App() {
     <>
       <GlobalStyles />
       <StyledApp>
-        <H1>The Wild Oasis</H1>
+        <Heading as='h1'>The Wild Oasis</Heading>
+        <Heading as='h2'>Check in and out</Heading>
         <Button>Check In</Button>
         <Button>Check Out</Button>
+        <Heading as='h3'>Form</Heading>
         <Input type='number' placeholder='Number of guests' />
       </StyledApp>
     </>

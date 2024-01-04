@@ -33,7 +33,6 @@ function SignupForm() {
           })}
         />
       </FormRow>
-
       <FormRow label='Email address' error={errors?.email?.message}>
         <Input
           type='email'
@@ -48,7 +47,6 @@ function SignupForm() {
           })}
         />
       </FormRow>
-
       <FormRow
         label='Password (min 8 characters)'
         error={errors?.password?.message}
@@ -66,7 +64,6 @@ function SignupForm() {
           })}
         />
       </FormRow>
-
       <FormRow label='Repeat password' error={errors?.passwordConfirm?.message}>
         <Input
           type='password'
@@ -79,7 +76,6 @@ function SignupForm() {
           })}
         />
       </FormRow>
-
       <FormRow>
         {/* type is an HTML attribute! */}
         <Button
